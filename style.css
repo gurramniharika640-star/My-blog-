@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #b20710;
+}
+
+#movieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.movie-card {
+    width: 220px;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h2 {
+    font-size: 20px;
+    margin: 12px 5px;
+}
+
+.movie-card p {
+    color: #ccc;
+    margin: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+}
